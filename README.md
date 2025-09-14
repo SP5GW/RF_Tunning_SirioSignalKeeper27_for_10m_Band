@@ -28,20 +28,37 @@ For easy single-person antenna maintenance, mount the antenna on a mast made of 
 
 
 <p align="center">
-<img src="./img/IMG_2239.jpg" width="400" height="500"/>
-<img src="./img/IMG_2240.jpg" width="400" height="500"/>
 <img src="./img/IMG_2241.jpg" width="400" height="500"/>
 <img src="./img/IMG_2242.jpg" width="400" height="500"/>
 </p>
-
 
 As you can tell from the above, I’m definitely not an antenna expert 🙂.
 
 ## Reliable Tunning Procedure
 
+STEP 1: Prepare your cabling. Make sure all connectors are reliable, and keep a set of socket/plug adapters handy to connect the NanoVNA (or any SWR meter you prefer).
 
+STEP 2: Connect one end of the coax to NanoVNA channel 0.
 
-Photos of the antenna mounting can be seen below:
+STEP 3: Calibrate the NanoVNA by connecting the open/short/50 Ω standards at the far end of the coax. Yes — NanoVNA can calibrate at a point 20m away from its test port! The physical routing of the cable doesn’t matter as long as the connectors are solid and there’s no RF leakage. (For my tests, I set the frequency span to 28–30 MHz.)
+
+STEP 4: Once calibration is complete, climb to the roof and connect the coax to the antenna.
+
+STEP 5: Back in the shack, perform an SWR sweep. Remember, you are now measuring at the antenna feed point! Compare your SWR curve with the manufacturer’s reference (see below). If the curve appears much narrower or distorted, it may indicate unwanted coupling to nearby metal structures or other antennas.
+
+<p align="center"> 
+<img src="./img/SignalKeeper27_Typical_SWR_Response.png" width="400" height="500"/> 
+</p>
+
+STEP 6: Return to the roof and adjust the length of the radiating element.
+
+Shorten the element to shift the SWR dip higher in frequency. Lengthen it to shift the dip lower.
+
+When you’re close to your target frequency, make adjustments in a few millimeter steps: changing the radiator length by just 10 mm can shift the SWR minimum by about 80–130 kHz, depending on the antenna’s surroundings.
+
+Repeat STEP 5–6 until you’re satisfied with the results—or until you’ve had enough of climbing up and down the roof 🙂.
+
+My tunning results:
 
 <p align="center">
 <img src="./img/feed_point.jpg" width="400" height="500"/>
@@ -49,30 +66,3 @@ Photos of the antenna mounting can be seen below:
 <img src="./img/end2.jpg" width="400" height="500"/>
 </p>
 
-## Tunning
-
-Tunning of the antenna was very simple. It was enough to reduce antenna length by about a meter at each end to achieve SWR minimum of 1.8 at 3.7Mhz. At both ends of the band SWR did not exceed 3, which meant that in practice no antenna tunner was required to operate the setup.
-
-<p align="center">
-<img src="./img/swr_f0.jpg" width="400" height="500"/>
-<img src="./img/swrf0_max.jpg" width="400" height="500"/>
-<img src="./img/swr_ll.jpg" width="400" height="500"/>
-<img src="./img/swr_rr.jpg" width="400" height="500"/>
-</p>
-
-## Coverage Performance
-
-It was possible to establish QSOs with entire Poland starting with stations located just a few kilometers away. The longest QSO was made with station from Bulgaria.
-
-More tests will be carried out to confirm antenna performance especially when it comes to close proximity communication.
-
-# Summary
-
-In summary, I was positively surprised that so low mounted antenna can deliver solid regional coverage. Reports received were always above 57 (I was transmitting with 30-100W power using FT-710 in LSB mode).
-
-## References
-[1] Understanding NVIS - Rhode-Schwarz
-
-[2] The NVIS— A Low Antenna for Regional  Communications - Albert L. Pion, KK7XO, QST June 2002
-
-[3] A Look at NVIS Techniques - Ed Farmer, AA6ZM - QST January 1995
