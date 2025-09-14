@@ -12,30 +12,34 @@ I first installed this antenna last year, but after running into difficulties du
 With just a few simple principles, the Sirio antenna can be installed and tuned without much effort. In practice, it not only works reliably but also outperforms the half-wave end-fed antenna I have been using on the 10 m band.
 
 
-## Design
-To build the anntenna I used 4mm2 insulated wire (Lgy4). Rough estimation of dimensions can be found using below formula:
+## Initial Mistakes
 
-$L_{\text{antenna total length}} = K \cdot \frac{c}{2f}$
+### Stay clear from metal surfaces...
+During my first attempt, I installed the Signal Keeper too close to my metal roof—only about 2 m above the surface and roughly 1.5 m from the chimney, which, although smaller, is still a significant metal structure. Antenna coupled to nearby metal surface was possible to tune but its bandwidth was very narrow compared to standard SWR curve provided by manufacturer (see next section of this document). 
 
-where:
+### Avoid getting too close to the antenna during tuning — your body can easily detune it and shift the SWR minimum.
+To make matters worse, I tried tuning the antenna while sitting on the rooftop directly beneath it, ready to make quick adjustments (with my son monitoring the NanoVNA readings in the shack). However, as soon as I left the area and checked again, the SWR minimum had shifted.
 
-K- is shortening factor (K=1 for free space, K=0.9-0.95 for insulated wire antenna setup near the ground)
+### Always tune the antenna at the feed point—the coaxial cable can transform the impedance and give misleading readings.
+My final mistake was underestimating the impact of the ~20 m coaxial cable between the NanoVNA and the antenna feed point. The cable acted as an impedance transformer, which in my case led to completely misleading results—for example, shortening the radiating element caused the SWR dip to shift toward lower frequencies. At that point, I was genuinely perplexed!
 
-c - speed of light in free space in m/s (299 792 458 m/s)
+### Improved mast setup enabling single-person maintenance
+For easy single-person antenna maintenance, mount the antenna on a mast made of two sections joined with a pair of mast-to-mast clamps. In my setup, the taller section is fixed to the chimney using two wall brackets secured with chemical anchors (four per bracket). This arrangement makes it possible to loosen the upper mast section and slide it down to a convenient working height, providing safe and easy access to the antenna—without the need for additional help.
 
-f - frequency in Hertz
 
-Assuming K = 0.95:
+<p align="center">
+<img src="./img/IMG_2239.jpg" width="400" height="500"/>
+<img src="./img/IMG_2240.jpg" width="400" height="500"/>
+<img src="./img/IMG_2241.jpg" width="400" height="500"/>
+<img src="./img/IMG_2242.jpg" width="400" height="500"/>
+</p>
 
-$L_{\text{antenna total length}} \approx 39m$
 
-so each radiating element length will be:
+As you can tell from the above, I’m definitely not an antenna expert 🙂.
 
-$l = \frac{L_{\text{antenna total length}}}{2} = 19,5m$
+## Reliable Tunning Procedure
 
-To be on the safe side I used 2 x 20m wires, those dimentions produced SWR minimum slightly below 3.5MHz. Duirng antenna tunning antenna length was reduced (i.e. the length of both radiating elements was reduced by the same amount until SWR lowest point moved to desired frequency - in my case I have chosen 3.7MHz to optimize the setup for phone communication).
 
-It shall be noted that electrical dimensions of the half-wave dipol antenna are shorter if radiating elements are mounted low from the ground. When antenna is elevated its dimensions need to increse to keep SWR minimum at the same frequency.
 
 Photos of the antenna mounting can be seen below:
 
