@@ -40,7 +40,7 @@ STEP 1: Prepare your cabling. Make sure all connectors are reliable, and keep a 
 
 STEP 2: Connect one end of the coax to NanoVNA channel 0.
 
-STEP 3: Calibrate the NanoVNA by connecting the open/short/50 Ω standards at the far end of the coax. Yes — NanoVNA can calibrate at a point 20m away from its test port! The physical routing of the cable doesn’t matter as long as the connectors are solid and there’s no RF leakage. (For my tests, I set the frequency span to 28–30 MHz.)
+STEP 3: Calibrate the NanoVNA by connecting the open/short/50 Ω standards at the far end of the coax. Yes — NanoVNA can calibrate at a plane 20m away from its test port! The physical routing of the cable doesn’t matter as long as the connectors are solid and there’s no RF leakage. (For my tests, I set the frequency span to 28–30 MHz.)
 
 STEP 4: Once calibration is complete, climb to the roof and connect the coax to the antenna.
 
@@ -65,3 +65,6 @@ My tunning results:
 <img src="./img/Smith_At_Antenna_Feed.png" width="400" height="500"/>
 </p>
 
+# Conclusions
+
+The Sirio Signal Keeper 27 is a solid, budget-friendly entry-level antenna that can be easily tuned for the 10 m ham band (in my case, I had to retract the adjustable radiator so only about 6 cm remained exposed). The only real drawback is its relatively modest 100 W power rating.
