@@ -1,17 +1,16 @@
-# Half-Wavelength Dipole for 80m in NVIS Configuration
+# Tunning Sirio Signal Keeper 27 for 10m Band
 
 <p align="center">
-<img src="./img/main_picture.jpg" width="500" height="600"/>
+<img src="./img/main_photo.jpg" width="500" height="600"/>
 </p>
 
 ## Introduction
-This article summarizes my experiences with building 80m half-wave dipol in NVIS setup.
-The main goal of this project was to evaluate how practical is to install dipol antenna as low as 1m above the ground. 
-I wanted to test in particular:
+This article summarizes my experience with adapting the Signal Keeper 27, a ¼-wavelength CB band (27 MHz) base-loaded ground-plane antenna manufactured by Sirio in Italy.
 
-- quality of regional coverage (range of 0 to 500km)
+I first installed this antenna last year, but after running into difficulties during the tuning process, I set it aside for almost a year. Recently, I revisited the project—and this time achieved excellent results, which I would like to share here.
 
-- tunning ease
+With just a few simple principles, the Sirio antenna can be installed and tuned without much effort. In practice, it not only works reliably but also outperforms the half-wave end-fed antenna I have been using on the 10 m band.
+
 
 ## Design
 To build the anntenna I used 4mm2 insulated wire (Lgy4). Rough estimation of dimensions can be found using below formula:
