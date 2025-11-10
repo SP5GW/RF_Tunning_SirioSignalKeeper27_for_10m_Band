@@ -1,4 +1,4 @@
-# Workflow of plotting QSOs on the map by Adam, SQ5VCO.
+# Workflow of plotting QSOs on the map by Adam, SQ5VCO (YT:@AdamSQ5VCO).
 
 1. Go to:
 https://www.rickmurphy.net/lotwquery.htm 
