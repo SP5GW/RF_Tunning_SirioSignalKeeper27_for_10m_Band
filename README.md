@@ -69,8 +69,14 @@ My tunning results:
 
 The Sirio Signal Keeper 27 is a solid, budget-friendly entry-level antenna that can be easily tuned for the 10 m ham band (in my case, I had to retract the adjustable radiator so only about 6 cm remained exposed). The only real drawback is its relatively modest 100 W power rating.
 
-Summary of FT8/FT4 QSOs made with the Sirio Signal Keeper 27 over two weekends in October 2025:
+Summary of FT8/FT4 confirmed QSOs made with the Sirio Signal Keeper 27 over two weekends in October 2025:
 
 <p align="center">
 <img src="./img/sirio_ft_performance.png" width="600" height="700"/>
+</p>
+
+Summary of SSB confirmed QSOs made with Sirio Signal Keeper during CQ WW 2025 contest. Low Power/100W.
+
+<p align="center">
+<img src="./img/sirio_ssb_performance_cqww2025.png" width="600" height="700"/>
 </p>
